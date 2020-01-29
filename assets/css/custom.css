@@ -95,3 +95,24 @@ body.header-fixed-space{padding-top:0px !important;}
 .solutions-heading{margin-top:50px;}
 .portfolio-box-v1-solutions li:hover:after{background:rgba(0,0,0,0.1) !important;}
 .micro-services-fix{background: url(../img/team/faces.jpg) 50% 0 repeat fixed !important;padding: 0px !important;padding-top:40px !important;}
+.relative { position: relative;}
+.avail-roles {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    transition: color .5s;
+}
+.roles-btn {
+    position: absolute;
+    bottom: 20px;
+    z-index: 1;
+    left: 10%;
+    border-radius: 6px;
+    text-align: center;
+    background-color: rgb(111,206,88);
+    padding: 4px 13px;
+}
+.roles-btn:hover a {
+    color: rgb(31,32,36);
+    text-decoration: none;
+}
