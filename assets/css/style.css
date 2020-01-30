@@ -23,3 +23,16 @@ select::-ms-expand{display:none;}
 .slider-min-height{min-height:343px;text-align:left;}
 .text-no-transform{text-transform:none !important;}
 .green-box-v1{border-top:solid 2px #72c02c;}
+
+.height300 {
+    height: 300px;
+}
+.h100 {
+    height: 100%;
+}
+.tabletUpdate {
+    top: 0 !important;
+        /* left: 0; */
+    /* min-height: 150px; */
+    /* margin-top: -75px; */
+}
