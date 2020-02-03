@@ -24,15 +24,316 @@ select::-ms-expand{display:none;}
 .text-no-transform{text-transform:none !important;}
 .green-box-v1{border-top:solid 2px #72c02c;}
 
-.height300 {
-    height: 300px;
+#about-conseqta .portfolio-box-v1-in {
+	margin: 0;
+	min-height: unset;
+	left: 50%;
+	transform: translateX(-50%);
+	width: auto;
 }
-.h100 {
-    height: 100%;
+#about-conseqta h2 {
+	padding: 0;
+	margin: 0;
 }
-.tabletUpdate {
-    top: 0 !important;
-        /* left: 0; */
-    /* min-height: 150px; */
-    /* margin-top: -75px; */
+#about-conseqta h2:nth-child(2) {
+	line-height: 17px;
 }
+#our-company .portfolio-box-v1-in {
+	transform: none;
+	width: 100%;
+	left: 0;
+	top: 0 !important;
+	height: 100%;
+}
+#about-conseqta #build-w-us {
+	top: 0 !important;
+	height: 100%;
+}
+#about-conseqta #build-w-us .portfolio-box-v1-in {
+	top: 20% !important;
+	width: 100%;
+	height: 80%;
+	transform: translateY(0);
+	left: 0;
+}
+#about-conseqta #build-w-us .portfolio-box-v1-in h3 {
+	margin-top: 0;
+}
+
+#about-conseqta #build-w-us .portfolio-box-v1-in p {
+	margin-bottom: 0;
+}
+#about-conseqta + .call-action-v1 .call-action-v1-box {
+	padding: 0;
+}
+#about-conseqta #our-company .portfolio-box-v1-in {
+	height: unset;
+    top: 50% !important;
+    transform: translateY(-50%);
+}
+#about-conseqta #focused .portfolio-box-v1-in {
+	transform: translate(-50%,-50%);
+}
+
+/* SERVICES */
+.black-bg { 
+	background-color: #081016;
+ }
+.no-sql {
+  grid-area: noSql;
+  height: 100%;
+  background: #7FBF3F url(../../assets/img/services/data_BG.svg) scroll no-repeat 90% 90% /180px;
+}
+.no-sql p {
+	color: rgb(52,93,19);
+}
+.no-sql .icon {
+	width: 40px;
+	margin-top: 30px;
+	margin-left: 20px;
+}
+.bus-mgmt {
+  grid-area: busMgmt;
+  background: rgb(27,86,86) url(../../assets/img/services/businessMgmt_BG.svg) scroll no-repeat right center/55%;
+}
+.bus-mgmt p {
+	color: rgb(105, 183, 183);
+}
+.bus-mgmt .icon {
+	width: 40px;
+	margin-top: 30px;
+	margin-left: 20px;
+	margin-bottom: 30px;
+}
+.ent-search {
+  grid-area: entSearch;
+  background-blend-mode: soft-light;
+  background: rgb(13,33,53) url(../../assets/img/services/enterpriseSearch_BG.svg) scroll no-repeat 140% 20% /260px;
+}
+.ent-search p {
+	color: rgb(123,145,166);
+}
+.reactive-apps {
+  grid-area: reactiveApps;
+  background-blend-mode: screen;
+  background: rgb(31,90,143) url(../../assets/img/services/reactiveApps_BG.svg) scroll no-repeat 220% 40% /320px;
+}
+.reactive-apps p {
+	color: rgba(140,184,233);
+}
+.reactive-apps .icon {
+	width: 40px;
+	margin-top: 30px;
+	margin-left: 20px;
+	margin-bottom: 30px;
+}
+.uiux {
+  grid-area: UIUX;
+  background: rgb(43,158,157) url(../../assets/img/services/UIUX_BG.svg) scroll no-repeat center center /340px;
+}
+.uiux p {
+	color: rgb(17,54,54);
+}
+#services-offered {
+  display: grid;
+  grid-template-areas:
+    'noSql noSql busMgmt entSearch' 'noSql noSql reactiveApps UIUX';
+  grid-gap: 15px;
+  max-width: 1650px;
+  padding: 10px 0;
+  margin: 0 auto;
+}
+#services-offered > div {
+  min-height: 200px;
+  border-radius: 10px;
+  position: relative;
+}
+#services-offered p {
+	font-weight: normal;
+	font-size: 11pt;
+	font-family: sans-serif;
+	letter-spacing: .5pt;
+	padding: 0 20px;
+}
+h3 {
+	color: white;
+	font-family: sans-serif;
+	padding: 20px 0 0 20px;
+	font-size: 14pt;
+	letter-spacing: .5pt;
+}
+
+
+@media (max-width: 1650px){
+	#services-offered {
+		margin: 0 15px;
+	}
+}
+
+
+@media (max-width: 1500px){
+	#about-conseqta #build-w-us .portfolio-box-v1-in {
+		top: 0 !important;
+	    padding-top: 30px;
+	    height: 100%;
+	}
+	.roles-btn {
+		bottom: 20px;
+	}
+}
+
+@media only screen and (max-width: 1400px){
+	#focused {
+		width: 100%;
+		height: 120px;
+	}
+	#our-company {
+		height: 190px;
+		width: 100%;
+	}
+	#build-w-us {
+		width: 100%;
+		height: 265px !important;
+	}
+	#about-conseqta #focused .portfolio-box-v1-in {
+		transform: none;
+	    position: absolute;
+	    height: 100%;
+	    padding: 0;
+	    left: 0;
+	    right: 0;
+	    top: 30px !important;
+	}
+	#about-conseqta h2 {
+		display: inline-block;
+	}
+	#about-conseqta #build-w-us .portfolio-box-v1-in p {
+	    max-width: 750px;
+	    padding: 0 !important;
+	    margin: 0 auto;
+	}
+	.roles-btn {
+		position: static !important;
+	    width: 150px;
+	    left: unset !important;
+	    bottom: unset !important;
+	    margin: 20px auto 0 auto;
+	}
+	#our-company .portfolio-box-v1-in {
+		padding-top: 10px;
+		max-width: 750px;
+	    margin: 0 auto;
+	    left: 0;
+	    right: 0;
+	}
+	#our-company p {
+		padding: 0 !important;
+	}
+	.no-sql {
+	  grid-area: noSql;
+	  height: 100%;
+	}
+	.reactive-apps {
+		background-position: center;
+		background-size: 100%;
+	}
+	.ent-search {
+		background-position: center;
+		background-size: 80%;
+	}
+}
+
+@media (max-width: 1200px){
+  #services-offered {
+    grid-template-areas: 'noSql noSql busMgmt''entSearch reactiveApps UIUX';
+  }
+  .uiux {
+  	background-size: 360px;
+	background-position: 10px -20px;
+  }
+  .no-sql {
+  	background-position: 104%;
+	background-size: 240px;
+  }
+  .bus-mgmt {
+  	background-size: 270px;
+	background-position: 50%;
+  }
+  .reactive-apps {
+  	background-size: 430px;
+	background-position: -54px -80px;
+  }
+}
+
+@media (max-width: 992px){
+  	#services-offered {
+    	grid-template-areas: 'busMgmt entSearch' 'reactiveApps UIUX' 'noSql noSql';
+  	}
+  	.reactive-apps {
+		background-size: 430px;
+		background-position: center center;
+	}
+	.uiux {
+		background-size: 360px;
+		background-position: center;
+	}
+	.no-sql {
+		background-size: 20%;
+		background-position: 100% center;
+	}
+	.no-sql .icon {
+	    margin-bottom: 30px;
+	}
+}
+
+@media only screen and (max-width: 750px){
+
+	#our-company .portfolio-box-v1-in {
+		padding-left: 15px;
+    	padding-right: 15px;
+	}
+	#our-company {
+		height: 330px;
+	}
+	#build-w-us {
+		height: 410px !important;
+	}
+	#build-w-us img {
+		height: 100%;
+		width: auto;
+	}
+	#about-conseqta #build-w-us .portfolio-box-v1-in {
+		padding-left: 15px;
+		padding-right: 15px;
+		top: 50% !important;
+		transform: translateY(-50%);
+		height: unset;
+		padding-top: 0;
+	}
+	#services-offered {
+    	grid-template-areas: 'UIUX UIUX' 'reactiveApps reactiveApps' 'busMgmt busMgmt' 'noSql noSql' 'entSearch entSearch'
+  	}
+  	.uiux {
+  		background-size: 200px;
+		background-position: 50% 50%;
+  	}
+  	.reactive-apps {
+  		background-size: 260px;
+  	}
+  	.bus-mgmt {
+  		background-size: 170px;
+  	}
+  	.no-sql, .ent-search {
+  		background-position: center;
+  	}
+  	.ent-search {
+  		background-size: 25%;
+  	}
+  	.no-sql {
+	    background-size: 40%;
+	    background-position: center;
+	}
+}
+
+
+

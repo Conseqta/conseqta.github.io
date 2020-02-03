@@ -134,6 +134,7 @@ body {
 
 .body-content {
   padding: 0 15px 30px 15px;
+  margin-bottom: 50px;
 }
 
 .content {
@@ -163,7 +164,6 @@ body {
 .sidebar {
   padding-right: 25px;
   border-right: 2px solid rgba(43,43,46,.5);
-  max-height: 85vh;
   margin-bottom: 20px;
 }
 
@@ -229,6 +229,13 @@ h5+p {
 .contact {
   text-align: right;
   font-size: 10pt;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color:white;
+  padding: 10px 20px 10px 0;
+  width: 100%;
+  border-top: 1px solid rgba(43,43,46,.3);
 }
 
 .contact a {
@@ -282,6 +289,17 @@ h5+p {
   .headline {
     font-size: 1.7em;
   }
+  .contact {
+    text-align: center;
+    font-size: 10pt;
+  }
+}
+
+@media (max-width: 692px) { 
+  .bg-img {
+    background-position-y: -90px;
+    transform: scale(1.5);
+  }
 }
 
 @media (max-width: 592px) {
@@ -302,6 +320,19 @@ h5+p {
   .bg-img {
     background-position-y: -30px;
     transform: scale(1.3);
+  }
+}
+
+@media (max-width: 500px) { 
+  .bg-img {
+    background-position-y: -40px;
+    transform: scale(1.7);
+  }
+}
+
+@media (max-width: 430px) { 
+  .bg-img {
+    background-position-y: 40px;
   }
 }
 
